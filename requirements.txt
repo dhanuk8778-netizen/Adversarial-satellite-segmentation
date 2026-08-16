@@ -1,0 +1,11 @@
+torch>=2.1
+numpy>=1.24
+scipy>=1.10
+pyyaml>=6.0
+pillow>=10.0
+matplotlib>=3.7
+pytest>=7.4
+
+# Optional, only needed for real Sentinel-2 GeoTIFF loading (src/data/dataset.py)
+# rasterio>=1.3
+# tifffile>=2023.7.10

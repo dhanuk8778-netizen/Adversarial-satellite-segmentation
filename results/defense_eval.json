@@ -1,0 +1,138 @@
+{
+  "robust_clean": {
+    "mIoU": 0.5715706008881081,
+    "pixel_accuracy": 0.9977945963541667,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9985736371773333,
+      "urban": 0.8699677938808373,
+      "agriculture": 0.9893115733823699,
+      "barren": 0.0,
+      "wetland": null
+    }
+  },
+  "robust_under_pgd": {
+    "mIoU": 0.5480978874192532,
+    "pixel_accuracy": 0.9900716145833334,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9899708878489036,
+      "urban": 0.8111888111888111,
+      "agriculture": 0.9393297380585516,
+      "barren": 0.0,
+      "wetland": null
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.5812973533357892,
+      "mIoU": 0.3515070679618683,
+      "pixel_accuracy": 0.90570068359375,
+      "per_class_iou": {
+        "class_0": 0.0,
+        "class_1": 0.8972936220390076,
+        "class_2": 0.28371348539415764,
+        "class_3": 0.9265832190214907,
+        "class_4": 0.001452081316553727,
+        "class_5": 0.0
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2173767736979892,
+      "mIoU": 0.6435294444795557,
+      "pixel_accuracy": 0.9430745442708334,
+      "per_class_iou": {
+        "class_0": null,
+        "class_1": 0.9356990178949723,
+        "class_2": 0.7513274336283186,
+        "class_3": 0.8868838144629958,
+        "class_4": 0.00020751193193608634,
+        "class_5": null
+      }
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9560820715767997,
+      "mIoU": 0.6507530289908472,
+      "pixel_accuracy": 0.9865885416666667,
+      "per_class_iou": {
+        "class_0": null,
+        "class_1": 0.9871245656623352,
+        "class_2": 0.6851922344880091,
+        "class_3": 0.9287229292252736,
+        "class_4": 0.0019723865877712033,
+        "class_5": null
+      }
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.7194470541817801,
+      "mIoU": 0.6641357464798974,
+      "pixel_accuracy": 0.9933837890625,
+      "per_class_iou": {
+        "class_0": null,
+        "class_1": 0.9946163622602711,
+        "class_2": 0.693939393939394,
+        "class_3": 0.9679872297199246,
+        "class_4": 0.0,
+        "class_5": null
+      }
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5293547085353306,
+      "mIoU": 0.6972989800356392,
+      "pixel_accuracy": 0.9972412109375,
+      "per_class_iou": {
+        "class_0": null,
+        "class_1": 0.9983628402817437,
+        "class_2": 0.802797833935018,
+        "class_3": 0.988035245925795,
+        "class_4": 0.0,
+        "class_5": null
+      }
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3850804431097848,
+      "mIoU": 0.6978527465179831,
+      "pixel_accuracy": 0.9974202473958333,
+      "per_class_iou": {
+        "class_0": null,
+        "class_1": 0.9985431415771207,
+        "class_2": 0.8036613272311213,
+        "class_3": 0.9892065172636904,
+        "class_4": 0.0,
+        "class_5": null
+      }
+    }
+  ],
+  "baseline_clean": {
+    "mIoU": 0.5502520513026685,
+    "pixel_accuracy": 0.9872517903645833,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9865586765466138,
+      "urban": 0.8364957610012111,
+      "agriculture": 0.9282058189655172,
+      "barren": 0.0,
+      "wetland": null
+    }
+  },
+  "baseline_under_pgd": {
+    "mIoU": 0.5125873190734376,
+    "pixel_accuracy": 0.9712361653645833,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9686565378633808,
+      "urban": 0.7560300514037169,
+      "agriculture": 0.8382500061000903,
+      "barren": 0.0,
+      "wetland": null
+    }
+  },
+  "clean_accuracy_tradeoff_points": -2.131854958543955,
+  "miou_recovered_points": 3.5510568345815674
+}

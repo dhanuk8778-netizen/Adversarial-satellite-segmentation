@@ -1,0 +1,48 @@
+{
+  "checkpoint": "checkpoints/unet_demo_best.pt",
+  "pgd_config": {
+    "eps": 0.03137254901960784,
+    "alpha": null,
+    "num_iter": 10,
+    "random_start": true
+  },
+  "fgsm_config": {
+    "eps": 0.03137254901960784
+  },
+  "clean": {
+    "mIoU": 0.5502520513026685,
+    "pixel_accuracy": 0.9872517903645833,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9865586765466138,
+      "urban": 0.8364957610012111,
+      "agriculture": 0.9282058189655172,
+      "barren": 0.0,
+      "wetland": null
+    }
+  },
+  "pgd": {
+    "mIoU": 0.5121649060187025,
+    "pixel_accuracy": 0.9711222330729167,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9685564987702054,
+      "urban": 0.7546424338206242,
+      "agriculture": 0.8376255975026826,
+      "barren": 0.0,
+      "wetland": null
+    }
+  },
+  "fgsm": {
+    "mIoU": 0.5195235621071284,
+    "pixel_accuracy": 0.9762654622395833,
+    "per_class_iou": {
+      "water": 0.0,
+      "forest": 0.9744935803260802,
+      "urban": 0.7587025316455697,
+      "agriculture": 0.8644216985639916,
+      "barren": 0.0,
+      "wetland": null
+    }
+  }
+}

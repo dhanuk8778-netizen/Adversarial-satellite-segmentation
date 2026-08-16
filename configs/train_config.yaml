@@ -1,0 +1,31 @@
+# Training configuration for the clean U-Net baseline.
+data:
+  source: synthetic          # "synthetic" or "real"
+  root: null                 # path to real Sentinel-2 chip dir, if source == real
+  num_samples: 5000          # matches the 5,000-image reported dataset size
+  image_size: 128
+  val_fraction: 0.15
+  test_fraction: 0.15
+  seed: 42
+
+model:
+  in_channels: 6
+  num_classes: 6
+  base_filters: 64
+  bilinear: true
+
+train:
+  epochs: 40
+  batch_size: 16
+  lr: 3.0e-4
+  weight_decay: 1.0e-4
+  optimizer: adamw
+  lr_scheduler: cosine
+  num_workers: 4
+  amp: true
+  early_stop_patience: 8
+
+output:
+  checkpoint_dir: checkpoints
+  results_dir: results
+  run_name: unet_baseline

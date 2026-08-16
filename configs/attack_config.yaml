@@ -1,0 +1,20 @@
+# Adversarial attack / defense evaluation configuration.
+pgd:
+  eps: 0.03137254901960784   # 8/255
+  alpha: null                # defaults to eps/4 if null
+  num_iter: 10
+  random_start: true
+
+fgsm:
+  eps: 0.03137254901960784   # 8/255
+
+adversarial_training:
+  eps: 0.03137254901960784
+  clean_ratio: 0.5
+  epochs: 15
+  batch_size: 16
+  lr: 3.0e-4
+
+eval:
+  batch_size: 16
+  num_batches: null          # null = full test set
